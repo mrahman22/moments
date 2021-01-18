@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import ImageGallery from "./components/ImageGallery";
 import UploadForm from "./components/UploadForm";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <p>Your Photo Gallery</p>
       </div>
       <UploadForm />
+      <ImageGallery />
     </div>
   );
 }

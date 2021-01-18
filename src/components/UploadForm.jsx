@@ -22,7 +22,10 @@ export default function UploadForm() {
 
   return (
     <form>
-      <input type="file" onChange={handleChange} />
+      <label>
+        <input type="file" onChange={handleChange} />
+        <span>+</span>
+      </label>
       <div className="file-output">
         {error && (
           <div className="error">
@@ -30,7 +33,7 @@ export default function UploadForm() {
           </div>
         )}
         {file && <div className="correct-file">{file.name}</div>}
-        {file && <ProgressBar file={file} setFile={setFile}/>}
+        {file && <ProgressBar file={file} setFile={setFile} />}
       </div>
     </form>
   );

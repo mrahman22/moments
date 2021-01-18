@@ -1,6 +1,6 @@
 body {
   background-color: #DDDDDD;
-  width: 900px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -14,4 +14,73 @@ header {
   font-size: 30px;
   font-weight: 900;
 }
+
+
+
+/*========================== Progress Bar Style ======================================= */
+
+.progress-bar {
+  height: 5px;
+  background-color: red;
+  margin-top: 10px;
+}
+
+/*========================== Progress Bar Style ======================================= */
+
+
+
+
+
+/*========================== Upload Form ======================================= */
+
+
+
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+label:hover{
+  background: var(--primary);
+  color: white;
+}
+
+/*========================== Upload Form ======================================= */
+
+
+
+
+
+
+
+/*=========================== image grid styles ==================================*/
+.image-gallery{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+/*=========================== image grid styles ==================================*/
 
